@@ -1,0 +1,94 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(./resources/opensans.ttf);
+}
+
+* {
+    font-family: OpenSans, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    height: 10vh;
+    width: 100%
+}
+
+.column {
+    display: inline-block;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+.column-10 {
+    width: 9%;
+}
+
+.column-80 {
+    width: 79%;
+}
+
+.header-real {
+    background-color: #2a2a2a;
+    position: fixed;
+    z-index: 1000;
+}
+
+.header-dummy {
+    position: relative;
+}
+
+main {
+    background: lightgray;
+}
+
+.title {
+    top: 2.4vh;
+    display: block;
+    font-size: 4vh;
+    color: #DB53FB;
+    text-align: center;
+    position: relative;
+}
+
+.hamburger {
+    position: relative;
+    top: 3vh;
+    height: 4vh;
+    float: right;
+    right: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown:hover .hamburger {
+    display: none;
+}
+
+.dropdown-content {
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-auto-columns: 100%;
+    width: 100vw;
+    height: 90vh;
+    background-color: #2a2a2a;
+    z-index: 10;
+}
+
+.dropdown-element {
+    display: block;
+    text-align: center;
+    font-size: 5vh;
+    margin: auto;
+}
