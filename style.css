@@ -112,7 +112,3 @@ header {
 .table-big, .table-big th, .table-big td {
     border: var(--select-color) solid 1px;
 }
-
-.nav-dummy {
-    position: static;
-}
