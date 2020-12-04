@@ -32,8 +32,8 @@ body {
  }
 
 .nav-element {
-    font-size: 3rem;
-    padding: .5rem 0;
+    font-size: 4vh;
+    padding: 1vh 0;
     text-decoration: none;
     text-decoration-color: white;
     text-align: center;
@@ -60,40 +60,56 @@ header {
 }
 
 .text-motto {
-    font-size: 6rem;
+    font-size: 8vw;
     text-align: center;
 }
 
-.logo-container {
+.flex-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
     background-color: var(--nav-color);
     padding: 20px;
 }
 
 .logo {
-    height: 200px;
+    height: 10vh;
 }
 
 .text-large {
-    font-size: 4rem;
+    font-size: 6vw;
     text-align: center;
+    margin: 2vw;
+}
+
+.text-medium {
+    font-size: 4vw;
+}
+
+.text-small {
+    font-size: 3vw;
 }
 
 .color-block {
     background-color: var(--brand-color);
-    transform: skewY(-5deg);
-    padding: 40px 0;
-    margin: -40px 0 20px 0;
+    transform: skewY(-3deg);
+    padding: 3vw 0;
+    margin: 3vw 0;
 }
 
 .color-block-content {
-    transform: skewY(5deg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    transform: skewY(3deg);
     color: var(--background-color);
+    padding: 2vw;
 }
 
 .table-big {
@@ -113,11 +129,17 @@ header {
     border: var(--select-color) solid 1px;
 }
 
-.headphones-background {
-    background-image: url("./resources/images/headphones.jpg");
-    padding: 20px 0 50px 0;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    font-weight: bolder;
-    color: var(--background-color);
+.footer {
+    padding: 2vw;
+    background-color: var(--nav-color);
+}
+
+.footer-content {
+    color: var(--text-color);
+}
+
+.footer-bottom {
+    background-color: var(--nav-color);
+    height: 100px;
+    margin: -8vw 0;
 }

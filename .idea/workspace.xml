@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08faeb6b-719f-449f-a1cc-5dd6452dd812" name="Default Changelist" comment="oof">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -49,6 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607074007039</updated>
       <workItem from="1607074010631" duration="5371000" />
+      <workItem from="1607089235214" duration="3234000" />
     </task>
     <task id="LOCAL-00001" summary="oof">
       <created>1607078084046</created>
@@ -94,6 +96,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="oof" />

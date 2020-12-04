@@ -4,6 +4,24 @@
         <meta charset="UTF-8">
         <title>Muzikskatolo</title>
         <link type="text/css" rel="stylesheet" href="./style.css">
+        <style>
+            #membership-levels {
+                margin-top: -3vw;
+            }
+
+            #membership-levels-content {
+                align-items: stretch;
+            }
+
+            #headphones-background {
+                background-image: url("./resources/images/headphones.jpg");
+                padding: 2vw 0 5vw 0;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                font-weight: bolder;
+                color: var(--background-color);
+            }
+        </style>
     </head>
     <body>
         <nav>
@@ -18,15 +36,15 @@
             </a>
         </nav>
         <main>
-            <div class="logo-container">
+            <div class="logo-container flex-row">
                 <img class="logo" alt="Muzikskatolo logo" src="./resources/images/logo.png">
             </div>
-            <div class="text-motto headphones-background">
+            <div id="headphones-background" class="text-motto">
                 <div>All the music</div>
-                <div style="margin-top:260px">all the time</div>
+                <div style="margin-top:30vw">all the time</div>
             </div>
-            <div class="color-block">
-                <div class="color-block-content">
+            <div id="membership-levels" class="color-block">
+                <div id="membership-levels-content" class="color-block-content flex-column">
                     <table class="table-big">
                         <caption>Membership levels</caption>
                         <tr>
@@ -59,18 +77,22 @@
             </div>
             <div>
                 <div class="text-large">
-                    Featured artists
+                    Featured artist
                 </div>
-                <div>
-
+                <div class="flex-column">
+                    <img width="400" src="./resources/images/man.png" alt="Skittlz photo">
+                    <label class="text-medium">Skittlz</label>
                 </div>
             </div>
         </main>
-        <footer>
-            <div>
+        <footer class="footer color-block">
+            <div class="footer-content text-small color-block-content">
                 *Up to 4 Gold accounts (£4.99 each) for members of the same family for £9.99
                 (regardless of accounts used).
             </div>
         </footer>
+        <div class="footer-bottom">
+
+        </div>
     </body>
 </html>
