@@ -62,7 +62,6 @@ header {
 .text-motto {
     font-size: 6rem;
     text-align: center;
-    margin: 150px 0;
 }
 
 .logo-container {
@@ -71,7 +70,6 @@ header {
     justify-content: space-around;
     background-color: var(--nav-color);
     padding: 20px;
-    margin-bottom: 20px;
 }
 
 .logo {
@@ -87,7 +85,7 @@ header {
     background-color: var(--brand-color);
     transform: skewY(-5deg);
     padding: 40px 0;
-    margin: 20px 0;
+    margin: -40px 0 20px 0;
 }
 
 .color-block-content {
@@ -100,6 +98,7 @@ header {
 
 .table-big {
     font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 .table-big caption {
@@ -112,4 +111,13 @@ header {
 
 .table-big, .table-big th, .table-big td {
     border: var(--select-color) solid 1px;
+}
+
+.headphones-background {
+    background-image: url("./resources/images/headphones.jpg");
+    padding: 20px 0 50px 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-weight: bolder;
+    color: var(--background-color);
 }
