@@ -4,7 +4,7 @@
 }
 
 :root {
-    --brand-color: #DB53FB;
+    --brand-color: #db53fb;
     --background-color: #2a2a2a;
     --select-color: #181818;
     --nav-color: #1f1f1f;
@@ -19,7 +19,7 @@ body {
     margin: 0;
     background-color: var(--background-color);
     color: var(--text-color);
-    padding-bottom: 6rem;
+    padding-bottom: 1.5cm;
 }
 
 .nav-element--select {
@@ -32,22 +32,25 @@ body {
  }
 
 .nav-element {
-    font-size: 4vh;
-    padding: 1vh 0;
+    font-size: 0.5cm;
+    padding: 0.2cm;
     text-decoration: none;
     text-decoration-color: white;
     text-align: center;
-    border: var(--select-color) 1px solid;
+    border: var(--select-color) 0.05cm solid;
+    border-radius: 10px;
 }
 
 nav {
+    height: 1.5cm;
     z-index: 1000;
     position: fixed;
     bottom: 0;
     width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background: var(--background-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--nav-color);
 }
 
 * {
@@ -55,12 +58,11 @@ nav {
 }
 
 header {
-    height: 10vh;
     width: 100%;
 }
 
 .text-motto {
-    font-size: 8vw;
+    font-size: 1.1cm;
     text-align: center;
 }
 
@@ -68,6 +70,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .flex-column {
@@ -78,47 +81,53 @@ header {
 
 .logo-container {
     background-color: var(--nav-color);
-    padding: 20px;
+    padding: 0.1cm;
 }
 
 .logo {
-    height: 10vh;
+    height: 2cm;
 }
 
 .text-large {
-    font-size: 6vw;
+    font-size: 0.6cm;
     text-align: center;
-    margin: 2vw;
 }
 
 .text-medium {
-    font-size: 4vw;
+    font-size: 0.5cm;
 }
 
 .text-small {
-    font-size: 3vw;
+    font-size: 0.4cm;
 }
 
-.color-block {
-    background-color: var(--brand-color);
+.text-xsmall {
+    font-size: 0.3cm;
+}
+
+.diagonal-block {
     transform: skewY(-3deg);
-    padding: 3vw 0;
-    margin: 3vw 0;
+    margin: 0.75cm 0;
 }
 
-.color-block-content {
+.diagonal-block-content {
     transform: skewY(3deg);
+    padding: 0.5cm;
+}
+
+.brand-background {
+    background-color: var(--brand-color);
     color: var(--background-color);
-    padding: 2vw;
 }
 
 .table-big {
-    font-size: 3rem;
+    font-size: 0.5cm;
     margin-bottom: 20px;
 }
 
 .table-big caption {
-    font-size: 5rem;
+    font-size: 0.8cm;
+    font-weight: bold;
 }
 
 .table-big td {
@@ -126,20 +135,57 @@ header {
 }
 
 .table-big, .table-big th, .table-big td {
-    border: var(--select-color) solid 1px;
+    border: var(--select-color) solid .5vw;
 }
 
-.footer {
-    padding: 2vw;
+footer {
     background-color: var(--nav-color);
 }
 
 .footer-content {
+    padding: 2vw;
     color: var(--text-color);
 }
 
-.footer-bottom {
+#creator {
+    text-align: right;
+    padding: 0.5cm;
+}
+
+.collapsable {
+    margin: 2vh 2vw;
+}
+
+.collapsable-button {
+    background-color: var(--brand-color);
+    color: var(--nav-color);
+    cursor: pointer;
+    padding: 2%;
+}
+
+.collapsable-content {
+    max-height: 0;
+    overflow: hidden;
     background-color: var(--nav-color);
-    height: 100px;
-    margin: -8vw 0;
+    transition: max-height .3s ease-in-out;
+}
+
+.collapsable-button-active {
+    background-color: #9f3bb8;
+}
+
+.collapsable-button-inactive::after {
+    content: "+";
+    float: right;
+    margin-right: 3vw;
+}
+
+.collapsable-button-active::after {
+    content: "-";
+    float: right;
+    margin-right: 3vw;
+}
+
+table {
+    border-collapse: collapse;
 }

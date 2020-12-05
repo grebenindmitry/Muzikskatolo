@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Muzikskatolo</title>
-        <link type="text/css" rel="stylesheet" href="./style.css">
+        <link type="text/css" rel="stylesheet" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             #membership-levels {
                 margin-top: -3vw;
@@ -14,12 +15,36 @@
             }
 
             #headphones-background {
-                background-image: url("./resources/images/headphones.jpg");
-                padding: 2vw 0 5vw 0;
+                background-image: url("/resources/images/headphones.jpg");
+                background-position: center;
+                padding: 0.3cm 0 1cm 0;
                 background-repeat: no-repeat;
                 background-size: 100%;
                 font-weight: bolder;
                 color: var(--background-color);
+            }
+
+            #att {
+                margin-top: 3cm;
+            }
+
+            @media screen and (min-width: 600px) {
+                #headphones-background {
+                    padding: 0.3cm 3cm 1.3cm;
+                }
+
+                #atm {
+                    text-align: left;
+                }
+
+                #att {
+                    text-align: right;
+                    margin-top: 6.3cm;
+                }
+            }
+
+            #featured-pic {
+                width: 6cm;
             }
         </style>
     </head>
@@ -28,23 +53,25 @@
             <div class="nav-element nav-element--select">
                 Home
             </div>
-            <a class="nav-element" href="./library">
+            <a class="nav-element" href="/library">
                 Library
             </a>
-            <a class="nav-element" href="./about">
+            <a class="nav-element" href="/about">
                 About
             </a>
         </nav>
-        <main>
+        <header>
             <div class="logo-container flex-row">
-                <img class="logo" alt="Muzikskatolo logo" src="./resources/images/logo.png">
+                <a href="./"><img class="logo" alt="Muzikskatolo logo" src="/resources/images/logo.png"></a>
             </div>
+        </header>
+        <main>
             <div id="headphones-background" class="text-motto">
-                <div>All the music</div>
-                <div style="margin-top:30vw">all the time</div>
+                <div id="atm">All the music</div>
+                <div id="att">all the time</div>
             </div>
-            <div id="membership-levels" class="color-block">
-                <div id="membership-levels-content" class="color-block-content flex-column">
+            <div id="membership-levels" class="diagonal-block brand-background">
+                <div id="membership-levels-content" class="diagonal-block-content flex-column">
                     <table class="table-big">
                         <caption>Membership levels</caption>
                         <tr>
@@ -79,20 +106,22 @@
                 <div class="text-large">
                     Featured artist
                 </div>
-                <div class="flex-column">
-                    <img width="400" src="./resources/images/man.png" alt="Skittlz photo">
-                    <label class="text-medium">Skittlz</label>
-                </div>
+                <a href="/artists/monarchy/">
+                    <div class="flex-column">
+                        <img id="featured-pic" src="/resources/images/albums/monarchy/monarchy-album.jpg" alt="Monarchy album">
+                        <label class="text-medium">Monarchy</label>
+                    </div>
+                </a>
             </div>
         </main>
-        <footer class="footer color-block">
-            <div class="footer-content text-small color-block-content">
+        <footer>
+            <div class="footer-content text-small">
                 *Up to 4 Gold accounts (£4.99 each) for members of the same family for £9.99
                 (regardless of accounts used).
+                <div id="creator" class="text-xsmall">
+                    Created by Dmitry Grebenin. 2020
+                </div>
             </div>
         </footer>
-        <div class="footer-bottom">
-
-        </div>
     </body>
 </html>
