@@ -27,7 +27,7 @@ body {
 }
 
 .nav-element:hover {
-     background: var(--nav-color);
+     background: var(--select-color);
      transition: background-color .1s;
  }
 

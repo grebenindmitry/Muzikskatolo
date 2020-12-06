@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08faeb6b-719f-449f-a1cc-5dd6452dd812" name="Default Changelist" comment="oof">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artists/monarchy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/artists/monarchy/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/library/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/albums/monarchy/monarchy-DE.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/albums/monarchy/monarchy-DE.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/albums/monarchy/monarchy-ES.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/albums/monarchy/monarchy-ES.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/albums/monarchy/monarchy-NATG.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/albums/monarchy/monarchy-NATG.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/albums/monarchy/monarchy-RAAI.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/albums/monarchy/monarchy-RAAI.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/albums/monarchy/monarchy-album.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/albums/monarchy/monarchy-album.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/albums/monarchy/monarchy-ludo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/albums/monarchy/monarchy-ludo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +60,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.16226138" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -67,6 +82,7 @@
       <workItem from="1607089235214" duration="9899000" />
       <workItem from="1607161605126" duration="10935000" />
       <workItem from="1607177041331" duration="134000" />
+      <workItem from="1607272383581" duration="4307000" />
     </task>
     <task id="LOCAL-00001" summary="oof">
       <created>1607078084046</created>
