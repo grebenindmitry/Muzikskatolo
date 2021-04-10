@@ -10,7 +10,7 @@ INSERT INTO login (username, password_hash, plan) VALUES
 ('Ebolaismymiddlename', '$2y$10$J3pKwswXSP41g.a9RnwveO07B.VKWhTBfvj44WvaLTZH2XHOaVd7C', 1),
 ('Dimapidor', '$2y$10$EeFt651fwGqD.8b7syCef.ARcCbT3TKTV14BGz7x7woNuSbsHizSq', 1);
 
-INSERT INTO reviews (product_id, user, review, rating) VALUES
+INSERT INTO reviews (track, user, review, rating) VALUES
 (1, 'dgrebenin', 'epicc', 5),
 (1, 'BigChungus69', 'epiccwafaseiyugfk,hgwefuiekheuhifehuiwruhiewrihuefguihegfwhiukjwegrfiujhgewrjuihgewruhjikgrwesuihjkguhirjewkuijhgrewiujkhrgiujkhrer', 10),
 (1, 'FuccMiDaddy^^', 'epicciugtrweiugweioujgnoihjgoeiwjneslkfnjewalkfnaewlkfjewlifjalifwalfwjalifwajlifwajlifawjlfikajflkawjflsakfjlksafjsdaklfjlkdsajflk;dawsjsdalkfjadslkfjsdalkfjsdlf', 10),

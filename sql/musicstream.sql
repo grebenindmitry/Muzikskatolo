@@ -4,7 +4,7 @@
 -- 
 
 CREATE TABLE IF NOT EXISTS offers (
-  offer_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   title varchar(50) NOT NULL,
   description text NOT NULL,
   price decimal(4,2) NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS login (
   username varchar(50) NOT NULL PRIMARY KEY,
   password_hash varchar(255) NOT NULL,
   plan int NOT NULL,
-  FOREIGN KEY (plan) REFERENCES offers(offer_id)
+  FOREIGN KEY (plan) REFERENCES offers(id)
 );
 
 -- --------------------------------------------------------
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS login (
 --
 
 CREATE TABLE IF NOT EXISTS tracks (
-  track_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   artist varchar(100) NOT NULL,
   album varchar(100) NOT NULL,
   description text NOT NULL,
@@ -187,7 +187,7 @@ INSERT INTO tracks (artist, album, description, name, genre, image, thumb, sampl
 --
 
 CREATE TABLE IF NOT EXISTS reviews (
-  product_id int NOT NULL,
+  track int NOT NULL,
   user varchar(50) NOT NULL,
   review text NOT NULL,
   rating tinyint NOT NULL,
@@ -203,8 +203,8 @@ CREATE TABLE IF NOT EXISTS reviews (
 --
 
 CREATE TABLE IF NOT EXISTS playlists (
-  playlist_id int PRIMARY KEY AUTO_INCREMENT,
-  playlist_name varchar(255) NOT NULL,
+  id int PRIMARY KEY AUTO_INCREMENT,
+  name varchar(255) NOT NULL,
   user varchar(50) NOT NULL,
   FOREIGN KEY (user) REFERENCES login(username)
 );
@@ -219,8 +219,8 @@ CREATE TABLE IF NOT EXISTS playlists_contents (
   playlist_id int,
   track_id int NOT NULL,
   PRIMARY KEY (playlist_id, track_id),
-  FOREIGN KEY (playlist_id) REFERENCES playlists(playlist_id),
-  FOREIGN KEY (track_id) REFERENCES tracks(track_id)
+  FOREIGN KEY (playlist_id) REFERENCES playlists(id),
+  FOREIGN KEY (track_id) REFERENCES tracks(id)
 );
 
 -- --------------------------------------------------------
