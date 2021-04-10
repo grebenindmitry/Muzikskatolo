@@ -1,48 +1,45 @@
+/*
+    Created by Dmitry Grebenin
+    2021
+*/
+
 @font-face {
     font-family: OpenSans;
     src: url(./resources/opensans.ttf);
 }
 
+* {
+    font-family: OpenSans, sans-serif;
+}
+
 :root {
     --brand-color: #db53fb;
+    --brand-color-dark: #863199;
+    --button-color: #3e3e3e;
     --background-color: #2a2a2a;
     --select-color: #181818;
     --nav-color: #1f1f1f;
     --text-color: #c8c8c8;
+    --box-shadow: 2px 2px 3px 1px;
 }
 
 a {
     color: var(--text-color);
 }
 
+table {
+    border-collapse: collapse;
+}
+
 body {
     margin: 0;
     background-color: var(--background-color);
     color: var(--text-color);
-    padding-bottom: 1.5cm;
-}
-
-.nav-element--select {
-    background-color: var(--select-color);
-}
-
-.nav-element:hover {
-     background: var(--select-color);
-     transition: background-color .1s;
- }
-
-.nav-element {
-    font-size: 0.5cm;
-    padding: 0.2cm;
-    text-decoration: none;
-    text-decoration-color: white;
-    text-align: center;
-    border: var(--select-color) 0.05cm solid;
-    border-radius: 10px;
+    padding-bottom: 48px;
 }
 
 nav {
-    height: 1.5cm;
+    height: 48px;
     z-index: 1000;
     position: fixed;
     bottom: 0;
@@ -53,24 +50,80 @@ nav {
     background: var(--nav-color);
 }
 
-* {
-    font-family: OpenSans, sans-serif;
-}
-
 header {
     width: 100%;
+    background-color: var(--nav-color);
 }
 
-.text-motto {
-    font-size: 1.1cm;
+footer {
+    background-color: var(--nav-color);
+}
+
+.margin-large {
+    margin: 32px;
+}
+
+.margin-medium {
+    margin: 16px;
+}
+
+.margin-small {
+    margin: 8px;
+}
+
+.center-align {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    text-decoration: none;
+    background-color: var(--button-color);
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    color: var(--text-color);
+    box-shadow: var(--box-shadow) var(--select-color);
+    border: none;
     text-align: center;
 }
 
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.gone {
+    display: none;
+}
+
+/*noinspection CssInvalidPropertyValue*/
+.full-width {
+    width: -moz-available;          /* For Mozzila */
+    width: -webkit-fill-available;  /* For Chrome */
+    width: stretch;                 /* Unprefixed */
+}
+
+.text-input {
+    text-decoration: none;
+    background-color: var(--button-color);
+    border-radius: 8px;
+    padding: 8px;
+    color: var(--text-color);
+    box-shadow: var(--box-shadow) var(--select-color);
+    border: none;
+}
+
+.button:hover {
+    background: var(--select-color);
+    transition: background-color 100ms;
+}
+
+.button--select {
+    background-color: var(--select-color);
+}
+
+.error-msg {
+    color: red;
+}
+
+.success-msg {
+    color: green;
 }
 
 .flex-column {
@@ -79,40 +132,58 @@ header {
     align-items: center;
 }
 
-.logo-container {
-    background-color: var(--nav-color);
-    padding: 0.1cm;
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-row--center {
+    justify-content: center;
 }
 
 .logo {
-    height: 2cm;
+    padding: 4px;
+    height: 64px;
 }
 
-.text-large {
-    font-size: 0.6cm;
+.text-xxxlarge {
+    font-size: xxx-large;
     text-align: center;
 }
 
+.text-xxlarge {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.text-xlarge {
+    font-size: x-large;
+    text-align: center;
+}
+
+.text-large {
+    font-size: large;
+}
+
 .text-medium {
-    font-size: 0.5cm;
+    font-size: medium;
 }
 
-.text-small {
-    font-size: 0.4cm;
-}
-
-.text-xsmall {
-    font-size: 0.3cm;
+.text-smaller {
+    font-size: smaller;
 }
 
 .diagonal-block {
     transform: skewY(-3deg);
-    margin: 0.75cm 0;
+    margin: 2.6vw 0;
 }
 
 .diagonal-block-content {
     transform: skewY(3deg);
-    padding: 0.5cm;
+    padding: 6vw 24px;
 }
 
 .brand-background {
@@ -120,53 +191,44 @@ header {
     color: var(--background-color);
 }
 
-.table-big {
-    font-size: 0.5cm;
-    margin-bottom: 20px;
-}
-
-.table-big caption {
-    font-size: 0.8cm;
-    font-weight: bold;
-}
-
 .table-big td {
     text-align: center;
 }
 
-.table-big, .table-big th, .table-big td {
-    border: var(--select-color) solid .5vw;
-}
-
-footer {
-    background-color: var(--nav-color);
+.table-big, .table-big tr {
+    border: var(--select-color) solid 1px;
 }
 
 .footer-content {
-    padding: 2vw;
-    color: var(--text-color);
+    padding: 8px;
 }
 
 #creator {
     text-align: right;
-    padding: 0.5cm;
+}
+
+.library-table th, .library-table td {
+    padding: 12px;
 }
 
 .collapsable {
-    margin: 2vh 2vw;
+    margin: 16px;
+    box-shadow: var(--box-shadow) var(--select-color);
+    background-color: var(--nav-color);
+    border-radius: 8px;
 }
 
 .collapsable-button {
     background-color: var(--brand-color);
+    border-radius: 8px;
     color: var(--nav-color);
     cursor: pointer;
-    padding: 2%;
+    padding: 8px;
 }
 
 .collapsable-content {
     max-height: 0;
-    overflow: hidden;
-    background-color: var(--nav-color);
+    overflow: scroll;
     transition: max-height .3s ease-in-out;
 }
 
@@ -174,18 +236,62 @@ footer {
     background-color: #9f3bb8;
 }
 
-.collapsable-button-inactive::after {
-    content: "+";
+.collapsable-button::after {
+    content: "⌃";
     float: right;
-    margin-right: 3vw;
+    margin-right: 16px;
+    transition: transform 300ms ease-in;
+}
+
+.collapsable-button-inactive::after {
+    transform: rotate(90deg);
 }
 
 .collapsable-button-active::after {
-    content: "-";
-    float: right;
-    margin-right: 3vw;
+    transform: rotate(180deg);
 }
 
-table {
-    border-collapse: collapse;
+.login-form {
+    width: min-content;
+}
+
+.login-form label {
+    text-align: center;
+}
+
+.album-thumb {
+    width: 6cm;
+    height: auto;
+}
+
+.album-thumb-container {
+    width: min-content;
+    text-align: center;
+}
+
+.track-open-page {
+    cursor: pointer;
+    transform: rotate(90deg);
+    font-size: xx-large;
+}
+
+.review-table {
+    table-layout: fixed;
+}
+
+.review-table td {
+    padding: 4px;
+    word-wrap: anywhere;
+}
+
+#rating-input {
+    width: 4ex;
+}
+
+.brand-background a {
+    color: var(--background-color);
+}
+
+textarea {
+    resize: none;
 }

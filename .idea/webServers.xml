@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="38c86733-fdf5-4e97-a0c5-7cbdc182351e" name="Vesta" url="https://vesta.uclan.ac.uk/~dgrebenin">
+        <fileTransfer rootFolder="/public_html" host="vesta.uclan.ac.uk" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" showHiddenFiles="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

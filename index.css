@@ -1,0 +1,41 @@
+/*
+    Created by Dmitry Grebenin
+    2021
+*/
+#headphones-background {
+    width: 100%;
+    height: auto;
+}
+
+#headphones-background-container {
+    color: var(--background-color);
+    font-weight: bolder;
+    position: relative;
+}
+
+#atm {
+    margin: 3vw 0 0;
+}
+
+#att {
+    margin: 49vw 0 0;
+}
+
+#membership-levels {
+    margin-top: -2.7vw;
+}
+
+#headphones-background-container > p {
+    position: absolute;
+    width: 100%;
+    font-size: 8vw;
+    text-align: center;
+}
+
+#membership-levels-content tbody {
+    box-shadow: var(--box-shadow) var(--brand-color-dark);
+}
+
+#featured-pic {
+    width: 6cm;
+}
